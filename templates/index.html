@@ -7,53 +7,130 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" integrity="sha512-QKC1UZ/ZHNgFzVKSAhV5v5j73eeL9EEN289eKAEFaAjgAiobVAnVv/AGuPbXsKl1dNoel3kNr6PYnSiTzVVBCw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/static/css/style.css">
     <script src="/static/js/src.js"></script>
+    <script src="https://unpkg.com/vtk.js"></script>
 </head>
 
-<main>
-  <div class="text-container">
-    <h1 data-value="ERAZEM KOS">ERAZEM KOS</h1>
-    <p data-value="SOFTWARE DEVELOPER">SOFTWARE DEVELOPER</p>
-    <p data-value="DATA SCIENTIST">DATA SCIENTIST</p>
-    <p data-value="COMPUTER VISION ENGINEER">COMPUTER VISION ENGINEER</p>
-    </div>
-</main>
-
 <body>
-<nav>
-  <div id="nav-links">
-    <a class="nav-link" href="#">
-      <h2 class="nav-link-label rubik-font">Home</h2>
-      <img class="nav-link-image" src="/static/images/home.png" />
-    </a>
-    <a class="nav-link" href="#">
-      <h2 class="nav-link-label rubik-font">Work</h2>
-      <img class="nav-link-image" src="/static/images/work.png" />
-    </a>
-    <a class="nav-link" href="#">
-      <h2 class="nav-link-label rubik-font">About</h2>
-      <img class="nav-link-image" src="/static/images/about.png" />
-    </a>
-    <a class="nav-link" href="#">
-      <h2 class="nav-link-label rubik-font">Contact</h2>
-      <img class="nav-link-image" src="/static/images/contact.png" />
+<nav data-toggled="false" data-transitionable="false">
+  <div id="nav-logo-section" class="nav-section">
+    <a href="#">
+      <i class="fa-solid fa-dumpster-fire"></i>
     </a>
   </div>
+  <div id="nav-mobile-section">
+    <div id="nav-link-section" class="nav-section">
+      <a href="#">ABOUT</a>
+      <a href="#">WORK</a>
+    </div>
+    <div id="nav-social-section" class="nav-section">
+      <a href="#">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="https://www.youtube.com/c/Hyperplexed" target="_blank">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-codepen"></i>
+      </a>
+    </div>
+    <div id="nav-contact-section" class="nav-section">
+      <a href="#">GET IN TOUCH</a>
+    </div>
+  </div>
+  <button id="nav-toggle-button" type="button" onclick="handleNavToggle()">
+    <span>Menu</span>
+    <i class="fa-solid fa-bars"></i>
+  </button>
 </nav>
 
-<button id="nav-toggle" type="button" onclick="toggleNav()">
-  <i class="open icon-menu"></i>
-  <i class="close icon-close"></i>
-</button>
+<main>
+  <article data-index="0" data-status="active">
+    <div class="article-image-section article-section"></div>
+    <div class="article-description-section article-section">
+      <h1 data-value="SOFTWARE DEVELOPER">SOFTWARE DEVELOPER</h1>
+      <h1 data-value="DATA SCIENTIST">DATA SCIENTIST</h1>
+      <h1 data-value="COMPUTER VISION ENGINEER">COMPUTER VISION ENGINEER</h1>
+      <h1 data-value="MSC IN ELECTRICAL ENGINEERING">MSC IN ELECTRICAL ENGINEERING</h1>
+    </div>
+    <div class="article-title-section article-section">
+      <h2 data-value="ERAZEM KOS">ERAZEM KOS</h2>
+      <i class="fa-light fa-plus-large"></i>
+    </div>
+    <div class="article-nav-section article-section">
+      <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+        <i class="icon-arrow-left"></i>
+      </button>
+      <button class="article-nav-button" type="button" onclick="handleRightClick()">
+        <i class="icon-arrow-right"></i>
+      </button>
+    </div>
+  </article>
+  <article data-index="1" data-status="inactive">
+    <div class="article-image-section article-section">
+      <iframe
+        src="https://www.youtube.com/embed/3L2SFQTAeJc?autoplay=1&mute=1&controls=0&modestbranding=1&showinfo=0&rel=0&loop=1&playlist=3L2SFQTAeJc&start=30"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        style="pointer-events: none;"
+        allowfullscreen>
+    </iframe>
+    </div>
+    <div class="article-description-section article-section">
 
-<a id="source-link" class="meta-link" href="https://www.buildinamsterdam.com/cases" target="_blank">
-  <i class="fa-solid fa-link"></i>
-  <span class="roboto-mono">Source</span>
-</a>
-
-<a id="yt-link" class="meta-link" href="https://youtu.be/GSPUUN4nDGE" target="_blank">
-  <i class="fa-brands fa-youtube"></i>
-  <span>5 min tutorial</span>
-</a>
+      <p>A place where books hang out waiting to be grabbed. But don't be too grabby now, ya hear?</p>
+    </div>
+    <div class="article-title-section article-section">
+        <h2>3D IMAGE AND MESH SEGMENTATION</h2>
+      <i class="fa-light fa-plus-large"></i>
+    </div>
+    <div class="article-nav-section article-section">
+      <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+        <i class="icon-arrow-left"></i>
+      </button>
+      <button class="article-nav-button" type="button" onclick="handleRightClick()">
+        <i class="icon-arrow-right"></i>
+      </button>
+    </div>
+  </article>
+  <article data-index="2" data-status="inactive">
+    <div class="article-image-section article-section"></div>
+    <div class="article-description-section article-section">
+      <p>The neatest lighthouse you ever saw. Ehh, actually it's kind of messy. But that's why the pic is of the outside.</p>
+    </div>
+    <div class="article-title-section article-section">
+      <h2>Neato Toledo Lighthouse</h2>
+      <i class="fa-light fa-plus-large"></i>
+    </div>
+    <div class="article-nav-section article-section">
+      <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+        <i class="icon-arrow-left"></i>
+      </button>
+      <button class="article-nav-button" type="button" onclick="handleRightClick()">
+        <i class="icon-arrow-right"></i>
+      </button>
+    </div>
+  </article>
+  <article data-index="3" data-status="inactive">
+    <div class="article-image-section article-section"></div>
+    <div class="article-description-section article-section">
+      <p>
+        The blobiest of blobs nestled deep in the heart of outer space. Well, technically the universe is both infinite and homogeneous so there isn't really a heart, per se.
+      </p>
+    </div>
+    <div class="article-title-section article-section">
+      <h2>Super Space Blob</h2>
+      <i class="fa-light fa-plus-large"></i>
+    </div>
+    <div class="article-nav-section article-section">
+      <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+        <i class="icon-arrow-left"></i>
+      </button>
+      <button class="article-nav-button" type="button" onclick="handleRightClick()">
+        <i class="icon-arrow-right"></i>
+      </button>
+    </div>
+  </article>
+</main>
 
 </body>
 </html>
