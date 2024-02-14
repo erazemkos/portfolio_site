@@ -18,7 +18,7 @@ body {
   box-sizing: border-box;
 }
 
-h1, h2, h3, a, p, span {
+h1, h2, h3, a, p, span, ul {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: white;
@@ -179,16 +179,12 @@ main > article:first-child > .article-image-section {
   background-image: url("/static/images/banking.png");
 }
 
-main > article:nth-child(2) > .article-image-section {
-  background-image: url("https://images.unsplash.com/photo-1535905557558-afc4877a26fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80");
-}
-
 main > article:nth-child(3) > .article-image-section {
-  background-image: url("https://images.unsplash.com/photo-1660580554695-d2ca5008f1f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80");
+  background-image: url("/static/images/simulation.png");
 }
 
 main > article:nth-child(4) > .article-image-section {
-  background-image: url("https://images.unsplash.com/photo-1660766877755-4cac24f6cf21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80");
+  background-image: url("/static/images/bpm.png");
 }
 
 main > article > .article-image-section {
@@ -202,10 +198,11 @@ main > article > .article-description-section {
   padding: 4rem; 
 }
 
-main > article > .article-description-section > p {
+main > article > .article-description-section > p, ul {
   color: rgba(255, 255, 255, 0.5);
   font-size: 1.25em;
 }
+
 
 main > article > .article-description-section > p  > a:hover {
   text-decoration: underline;
