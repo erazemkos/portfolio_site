@@ -59,7 +59,7 @@ const toggleNav = () => {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    const elements = document.querySelectorAll("h1, p, h2");
+    const elements = document.querySelectorAll("h2");
 
     elements.forEach(element => {
         function scrambleText() {
