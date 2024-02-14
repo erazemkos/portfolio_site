@@ -397,7 +397,7 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
     bottom: 0;      /* Align to the bottom of the viewport */
     left: 0;        /* Align to the left of the viewport */
     width: 100%;    /* Stretch across the full width of the viewport */
-    height: 100px; /* Set a fixed height */
+    height: 250px; /* Set a fixed height */
     z-index: 10;    /* Ensure it's above other content */
   }
 
